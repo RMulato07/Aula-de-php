@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Formulario</title>
+</head>
+<body>
+    <div class="box">
+        <form action="scrip.php" method="post">
+            <fieldset>
+                <legend>Cadastro</legend>
+                <br>
+                <div class="inputBox">
+                    <input type="text" id="nome" name="nome" class="inputUser" required>
+                    <label class="labelInput" for="nome">Nome Completo</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" id="email" name="email" class="inputUser" required>
+                    <label class="labelInput" for="email">Email</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="password" id="senha" name="senha" class="inputUser" required>
+                    <label class="labelInput" for="senha">Senha</label>
+                </div>
+                <br><br>
+                <div class="inputBox">
+                    <input type="text" id="idade" name="idade" class="inputUser" required>
+                    <label class="labelInput" for="idade">Idade</label>
+                </div>
+                <br><br>
+                <p>Sexo:</p>
+                <input type="radio" id="feminino" name="genero"  checked value="feminino" required>
+                <label for="feminino">Feminino</label>
+                <br>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <br>
+                <input type="radio" id="outro" name="genero" value="outro" required>
+                <label for="outro">Outro</label>
+                <br><br>
+
+
+                <p>Interesses</p>
+                <input type="checkbox" id="futebol" name="interesses[]" value="futebol" >
+                <label for="futebol">Futebol</label>
+                <br>
+                <input type="checkbox" id="cursos" name="interesses[]" value="cursos" >
+                <label for="cursos">Cursos</label>
+                <br>
+                <input type="checkbox" id="moda" name="interesses[]" value="moda" >
+                <label for="moda">Moda</label>
+                
+                <p>Estado:</p>
+                <select name="estado" id="estado">
+                    <option value="SP">SP</option>
+                    <option value="SC">SC</option>
+                    <option value="AM">AM</option>
+                    <option value="MT">MT</option>
+                    <option value="RJ">RJ</option>
+                </select>
+                <br><br><br>
+                <div>
+                    <label for="observacao">Observações</label>
+                    <br>
+                    <textarea rows="3" id="observacao" name="observacao"></textarea>
+                </div>
+                <button>enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
